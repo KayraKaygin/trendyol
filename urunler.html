@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- ! FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- ! OWL CAROUSEL -->
+<link rel="stylesheet" href="Css/owl.carousel.min.css">
+<link rel="stylesheet" href="Css/owl.theme.default.min.css">
+<!-- ! BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+<!-- ! CSS -->
+<link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+
+<!-- ! NAVBAR START -->
+
+    
+<nav style="background-color: #fff;" class="navbar navbar-expand-lg p-0">
+    <div class="container-fluid">
+      <div class="wrapper">
+        <div class="header-top">
+          <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">İndirim Kuponlarım</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Trendyol'da Satış yap</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Hakkımızda</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Yardım ve Destek</a></li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse mt-4 ms-3 justify-content-between" id="navbarSupportedContent">
+          <a class="navbar-brand" href="index.html">
+              <img class="logo" src="img/logo.png">
+            </a>
+              <!-- <input class="form-control me-2 search" type="search" placeholder="Search" >
+              <i class="fa-solid fa-magnifying-glass" style="color: #f27b1b; font-size: 20px;"></i> -->
+              <div class="input-group border-0" style="width: 600px;">
+                
+                <input type="text" style="background-color: #F3F3F3;" class="form-control border-0" placeholder="Aradığınız ürün, kategori veya markayı yazınız" aria-label="Username" >
+                <span class="input-group-text border-0" style="background-color: #F3F3F3;" >
+                  <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #f27b1b; font-size: 20px;"></i></a>
+                </span>
+              </div>
+          <ul style="width: 350px;" class="navbar-nav d-flex justify-content-evenly">
+            <li class="nav-item d-flex align-items-center">
+              
+              <a class="nav-link " href="user.html">
+                <i class="fa-solid fa-user"></i>
+                Giriş Yap</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              
+              <a class="nav-link" href="favoriler.html">
+                <i class="fa-solid fa-heart"></i>
+                Favorilerim</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              
+              <a class="nav-link" href="sepet.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Sepetim</a>
+            </li>
+          </ul>
+      </div>
+      </div>
+    
+    </div>
+  </nav>
+  <div style="width: 100%; background-color: #fff;" class="navigation-wrapper">
+  <ul class="m-0 p-0" >
+    <li class="nav-item"><a class="nav-link" href="#">Kadın</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Erkek</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Anne & Çocuk</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Ev & Mobilya</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Süpermarket</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Kozmetik</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Ayakkabı & Çanta</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Elektronik</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Spor&Outdoor</a></li>
+    <li class="nav-item d-flex align-items-center">
+      <a class="nav-link" href="#">Çok Satanlar</a>
+      <button type="button" class="btn btn-danger">Yeni</button>
+    </li>
+    <li class="nav-item d-flex align-items-center">
+      <a class="nav-link" href="#">Flaş Ürünler</a>
+      <button type="button" class="btn btn-danger">Yeni</button>
+    </li>
+</ul>
+</div>
+<!-- ! NAVBAR END -->
+
+<!-- ! Fixed buton -->
+<div class="fixed">
+  <a style=" color: #666666" class="text-decoration-none" href="#">
+  <i class="fa-solid fa-arrow-up"></i>
+  <span>Yukarı Çık</span> 
+</a>
+</div>
+
+<!-- ! SİDEBAR START -->
+<div class="container-fluid d-flex" style="margin-top: 15px;">
+<div style="width: 200px; padding-left: 20px;">
+<div style="width: 180px; border-bottom: 1px solid #A5A5A5; padding: 10px 5px; display: flex; justify-content: space-between; align-items: center;">
+  <div>
+  <button onclick="font()" style="font-size: 14px; font-weight: 500;" class="btn p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+   İlgili Kategoriler
+   
+  </button>
+</div>
+  <div>
+    <i style="font-size: 14px; color: #A5A5A5; cursor: pointer;" class="fa-solid fa-chevron-down ms-5"></i>
+  </div>
+</div>
+<div>
+  <div class="collapse " id="collapseWidthExample" style="height: 180px;">
+    <ul class="list-unstyled" style="height:180px; overflow: auto; ">
+      <li>
+       Sweatshirt
+      </li>
+      <li>
+       T-shirt
+      </li>
+      <li>
+       Sneaker
+      </li>
+      <li>
+       Pantolon
+      </li>
+      <li>
+       Sınav Hazırlık
+      </li>
+      <li>
+       Omuz Çantası
+      </li>
+      <li>
+       Çorap
+      </li>
+      <li>
+       Gömlek
+      </li>
+      <li>
+       Eşofman Altı
+      </li>
+      <li>
+       Bluz
+      </li>
+      <li>
+       Jeans
+      </li>
+      <li>
+       Bluetooth Kulaklık
+      </li>
+      <li>
+       Eşofman Takımı
+      </li>
+      <li>
+       Elbise
+      </li>
+      <li>
+       Ceket
+      </li>
+      <li>
+       Hırka
+      </li>
+      <li>
+       Parfüm
+      </li>
+      <li>
+       Kazak
+      </li>
+      <li>
+       Akıllı Saat
+      </li>
+      <li>
+       Okul Çantası
+      </li>
+      <li>
+       Saklama Kabı
+      </li>
+      <li>
+       Pijama Takımı
+      </li>
+      <li>
+       Sırt Çantası
+      </li>
+      <li>
+       Telefon Kılıfı
+      </li>
+      <li>
+       Cüzdan
+      </li>
+      <li>
+       Saat
+      </li>
+      <li>
+       Yüz Güneş Kremi
+      </li>
+
+    </ul>
+   
+  
+  </div>
+</div>
+
+<div style="width: 180px;border-bottom: 1px solid #A5A5A5; padding: 10px 5px; display: flex; justify-content: space-between; align-items: center;">
+  <div>
+  <button onclick="font()" style="font-size: 14px; font-weight: 500;" class="btn p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+   Marka
+   
+  </button>
+</div>
+  <div>
+    <i style="font-size: 14px; color: #A5A5A5; cursor: pointer;" class="fa-solid fa-chevron-down ms-5 "></i>
+  </div>
+  
+</div>
+<div>
+  <div style="height: 180px; overflow: auto; overflow-x: hidden;" class="collapse" id="collapseWidthExample">
+
+    <input style="width: 180px; margin-bottom: 5px;" type="text" placeholder="Marka ara">
+
+    <div class="input-group mb-3 d-block" style="width: 180px; height: 180px;">
+      <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+        <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+        <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">TRENDYOLMİLLA</a>
+      </div>
+      <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+        <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+        <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">Defacto</a>
+      </div>
+      <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+        <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+        <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">BGK</a>
+      </div>
+      <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+        <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+        <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">Tony Black</a>
+      </div>
+      <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+        <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+        <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">TRENDYOL MAN</a>
+      </div>
+      <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+        <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+        <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">Benim Hocam Yayınları</a>
+      </div>
+      <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+        <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+        <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">Avon</a>
+      </div>
+      <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+        <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+        <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">Madmex</a>
+      </div>
+      <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+        <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+        <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">Uyguntarz</a>
+      </div>
+      <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+        <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+        <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">Xiaomi</a>
+      </div>
+      <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+        <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+        <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">Happiness İstanbul</a>
+      </div>
+      <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+        <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+        <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">Kitchen Life</a>
+      </div>
+      <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+        <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+        <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">Shaka</a>
+      </div>
+      <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+        <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+        <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">rise and shine</a>
+      </div>
+      <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+        <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+        <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">Imoda</a>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div style="width: 180px;border-bottom: 1px solid #A5A5A5; padding: 10px 5px; display: flex; justify-content: space-between; align-items: center;">
+  <div>
+  <button onclick="font()" style="font-size: 14px; font-weight: 500;" class="btn p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+   Beden
+   
+  </button>
+</div>
+
+  <div>
+    <i style="font-size: 14px; color: #A5A5A5; cursor: pointer;" class="fa-solid fa-chevron-down ms-5 "></i>
+  </div>
+</div>
+<div style="height: 180px; overflow: auto; overflow-x: hidden;" class="collapse" id="collapseWidthExample">
+  <div style="width: 180px; height: 180px;" class="input-group mb-3 d-block">
+    <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+      <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+      <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">XXS</a>
+    </div>
+    <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+      <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+      <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">XS</a>
+    </div>
+    <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+      <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+      <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">S</a>
+    </div>
+    <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+      <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+      <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">M</a>
+    </div>
+    <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+      <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+      <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">L</a>
+    </div>
+    <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+      <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+      <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">XL</a>
+    </div>
+    <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+      <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+      <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">XXL</a>
+    </div>
+    <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+      <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+      <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">2XL</a>
+    </div>
+    <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+      <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+      <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">3XL</a>
+    </div>
+    <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+      <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+      <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">35</a>
+    </div>
+    <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+      <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+      <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">36</a>
+    </div>
+    <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+      <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+      <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">37</a>
+    </div>
+    <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+      <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+      <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">38</a>
+    </div>
+    <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+      <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+      <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">39</a>
+    </div>
+    <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+      <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+      <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">40</a>
+    </div>
+    <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+      <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+      <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">41</a>
+    </div>
+    <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+      <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+      <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">42</a>
+    </div>
+  </div>
+</div>
+  
+<div style="width: 180px;border-bottom: 1px solid #A5A5A5; padding: 10px 5px; display: flex; justify-content: space-between; align-items: center;">
+  <div>
+  <button onclick="font()" style="font-size: 14px; font-weight: 500;" class="btn p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+   Cinsiyet
+   
+  </button>
+</div>
+  <div>
+    <i style="font-size: 14px; color: #A5A5A5; cursor: pointer;" class="fa-solid fa-chevron-down ms-5 "></i>
+  </div>
+  
+</div>
+<div>
+  <div style="height: 180px; overflow: auto; overflow-x: hidden;" class="collapse" id="collapseWidthExample">
+
+    <input style="width: 180px; margin-bottom: 5px;" type="text" placeholder="Marka ara">
+
+    <div class="input-group mb-3 d-block" style="width: 180px; height: 180px;">
+      <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+        <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+        <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">Kadın</a>
+      </div>
+      <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+        <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+        <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">Erkek</a>
+      </div>
+      <div class="input-group-text border-0" style="background-color: white; padding: 1px 0;">
+        <input class="form-check-input mt-0 me-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+        <a href="#" style="text-decoration: none; color:#1B1B1B; font-size: 13px;">Çocuk</a>
+      </div>
+    </div>
+    
+  </div>
+</div>
+</div>
+
+
+
+<!-- ! SİDEBAR END -->
+
+<!-- ! CARD START -->
+<div style="margin-top: 28px; width: 100%;">
+  <div  class="d-flex justify-content-between">
+  <div>
+    <h1 style="font-size: 20px; margin-left: 20px;">"En Çok Öne Çıkan Ürünler" araması için sonuçlar listeleniyor</h1>
+    
+  </div>
+  <div>
+    <select class="form-select" style="width: 230px; padding:10px; font-size: 14px; margin-right: 20px; cursor: pointer; box-shadow: none;">
+      <option selected>Önerilen Sıralama</option>
+      <option value="1">En düşük fiyat</option>
+      <option value="2">En yüksek fiyat</option>
+    </select>
+  </div>
+</div>
+
+<div class="card-btn" style=" margin-left: 25px; padding-bottom: 25px;">
+  <button type="button" style="background-color: rgb(255, 249, 235);" class="btn">
+    <i class="fa-solid fa-star" style="color: #ffc000;"></i>
+    Yüksek Puanlı Ürünler</button>
+  <button type="button" style="background-color: rgb(235, 245, 255);" class="btn">
+    <i class="fa-solid fa-store" style="color: #1f6bc1;"></i>
+    Yüksek Puanlı Satıcılar</button>
+  <button type="button" style="background-color:rgb(255, 240, 244);"  class="btn">
+    <i class="fa-solid fa-gift" style="color: #ff4f8c;"></i>
+    Kuponlu Ürünler</button>
+  <button type="button" style="background-color: rgb(239, 251, 245);;" class="btn">
+    <i class="fa-solid fa-truck-moving" style="color: #0bc15c;"></i>
+    Hızlı Teslimat</button>
+  <button type="button" style="background-color: rgb(255, 239, 238);" class="btn">
+    <i class="fa-solid fa-volume-low" style="color: #f0372d;"></i>
+    Yeni Ürünler</button>
+</div>
+<div class="container" style="border-top: 1px solid #E6E6E6;">
+  <div class="row1 row" style="margin-top: 5px;"  >
+    <div class="col-3">
+      <div class="p-2">
+         <div class="card">
+
+        <a style="color: black;" class="text-decoration-none" href="#">
+
+      <div class="zindex">
+
+        <div class="kargo"><i class="fa-solid fa-cube"></i>KARGO BEDAVA</div>
+
+        <div class="e-logo">
+
+         <!-- <img src="img/eçslogo.webp" alt=""> -->
+
+        </div>
+        
+      </div>
+
+        <div onclick="favori()" onclick="favori()" class="heart">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+
+      <img src="img/ç1.webp" class="card-img-top" alt="...">
+
+      <div class="card-body">
+
+        <p class="card-text"><b>rise and shine</b> Antiperspirant Whitening Roll-on - 75 ml</p>
+
+        <span>
+          <i class="fa-solid fa-arrow-trend-down"></i> 
+          Son 14 Günün En Düşük Fiyatı!</span>
+
+        <div class="price">
+          125 TL
+        </div>
+        <div class="d-flex justify-content-center">
+        <button type="button" class="btn" style="background-color: #f27b1b; color: white; font-size: 13px; ">
+          Sepete Ekle
+          <i style="color: white; font-size: 10px;" class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+      </div>
+      </a>
+      </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="p-2">
+        <div class="card">
+
+          <a style="color: black;" class="text-decoration-none" href="#">
+        <div class="zindex">
+  
+          <div style="background-color: #3EC461;" class="kargo"><i class="fa-solid fa-truck" style="color: #ffffff;"></i> HIZLI TESLİMAT</div>
+  
+          <div class="kargo"><i class="fa-solid fa-cube"></i>KARGO BEDAVA</div>
+          
+        </div>
+  
+          <div onclick="favori()" class="heart">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+  
+        <img  src="img/ç2.webp" class="card-img-top" alt="...">
+  
+        <div class="card-body">
+  
+          <p class="card-text"><b>Bargello</b>  122 Oriental Edp 50 Ml Kadın Parfüm</p>
+  
+  
+          <div class="price2">
+            230 TL
+          </div>
+          <div class="d-flex ">
+          <div class="kupon"><i class="fa-solid fa-gift" style="color: #FF6B9E;"></i>
+            60TL Kupon
+          </div>
+          <div class="kampanya">
+            <i class="fa-solid fa-tag fa-rotate-90" style="color: #F27A1A;"></i>
+            Çok Al Az Öde
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="button" class="btn" style="background-color: #f27b1b; color: white; font-size: 13px; ">
+            Sepete Ekle
+            <i style="color: white; font-size: 10px;" class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+        </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="p-2">
+        <div class="card">
+
+          <a style="color: black;" class="text-decoration-none" href="#">
+  
+        <div class="zindex">
+          <div style="background-color: #3EC461;" class="kargo"><i class="fa-solid fa-truck" style="color: #ffffff;"></i> HIZLI TESLİMAT</div>
+          <div class="e-logo">
+  
+           <!-- <img src="img/eçslogo.webp" alt=""> -->
+  
+          </div>
+          
+        </div>
+          
+          <div onclick="favori()" class="heart">
+            
+            <i class="fa-regular fa-heart"></i>
+          </div>
+  
+        <img src="img/ç3.webp" class="card-img-top" alt="...">
+  
+        <div class="card-body">
+  
+          <p class="card-text"><b>TRENDYOLMİLLA </b> Siyah Yüksek Bel Pantolon </p>
+  
+  
+          <div class="price2">
+            175,99 TL
+          </div>
+          <div class="d-flex justify-content-center mt-4">
+            <button type="button" class="btn" style="background-color: #f27b1b; color: white; font-size: 13px; ">
+              Sepete Ekle
+              <i style="color: white; font-size: 10px;" class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="p-2">
+        <div class="card">
+
+          <a style="color: black;" class="text-decoration-none" href="#">
+  
+        <div class="zindex">
+          <div style="background-color: #3EC461;" class="kargo"><i class="fa-solid fa-truck" style="color: #ffffff;"></i> HIZLI TESLİMAT</div>
+          <div class="kargo"><i class="fa-solid fa-cube"></i>KARGO BEDAVA</div>
+  
+          <div class="e-logo">
+  
+           <!-- <img src="img/eçslogo.webp" alt=""> -->
+  
+          </div>
+          
+        </div>
+  
+          <div onclick="favori()" class="heart">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+  
+        <img src="img/ç4.webp" class="card-img-top" alt="...">
+  
+        <div class="card-body">
+  
+          <p class="card-text"><b> Benisengiydir</b> Erkek Yeşil Oversize Kapüşonlu Sweatshirt</p>
+  
+          <span>
+            <i class="fa-solid fa-arrow-trend-down"></i> 
+            Son 30 Günün En Düşük Fiyatı!</span>
+  
+          <div class="price">
+            <del style="color: #878787; font-weight: 400;">198.29</del>
+            185 TL
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn" style="background-color: #f27b1b; color: white; font-size: 13px; ">
+              Sepete Ekle
+              <i style="color: white; font-size: 10px;" class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+        </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="row row1">
+    <div class="col-3">
+      <div class="p-2">
+        
+    <div class="card">
+
+      <a style="color: black;" class="text-decoration-none" href="#">
+
+    <div class="zindex">
+
+      <div class="e-logo">
+
+       <!-- <img src="img/eçslogo.webp" alt=""> -->
+
+      </div>
+      
+    </div>
+
+      <div onclick="favori()" class="heart">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+
+    <img src="img/ç5.webp" class="card-img-top" alt="...">
+
+    <div class="card-body">
+
+      <p class="card-text"><b>Meguca Socks</b>  Kadın Karışık Extra Soft Renkli Patik Çorap</p>
+
+      <span>
+        <i class="fa-solid fa-arrow-trend-down"></i> 
+        Son 30 Günün En Düşük Fiyatı!</span>
+
+      <div class="price">
+        <del style="color: #878787; font-weight: 400;">56,90</del>
+        55 TL
+      </div>
+     
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn" style="background-color: #f27b1b; color: white; font-size: 13px; ">
+          Sepete Ekle
+          <i style="color: white; font-size: 10px;" class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+    </a>
+    </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="p-2">
+        <div class="card">
+
+          <a style="color: black;" class="text-decoration-none" href="#">
+  
+        <div class="zindex">
+          <div style="background-color: #3EC461;" class="kargo"><i class="fa-solid fa-truck" style="color: #ffffff;"></i> HIZLI TESLİMAT</div>
+          <div class="kargo"><i class="fa-solid fa-cube"></i>KARGO BEDAVA</div>
+  
+          <div class="e-logo">
+  
+           <!-- <img src="img/eçslogo.webp" alt=""> -->
+  
+          </div>
+          
+        </div>
+  
+          <div onclick="favori()" class="heart">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+  
+        <img src="img/ç6.webp" class="card-img-top" alt="...">
+  
+        <div class="card-body">
+  
+          <p class="card-text"><b>LOS OJOS</b> Kadın Siyah Yüksek Bel Jogger Eşofman Altı Joggers</p>
+  
+  
+          <div class="price2">
+            319,99 TL
+          </div>
+          <div class="kampanya">
+            <i class="fa-solid fa-tag fa-rotate-90" style="color: #F27A1A;"></i>
+            Çok Al Az Öde
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn" style="background-color: #f27b1b; color: white; font-size: 13px; ">
+              Sepete Ekle
+              <i style="color: white; font-size: 10px;" class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="p-2">
+        
+    <div class="card">
+
+      <a style="color: black;" class="text-decoration-none" href="#">
+
+    <div class="zindex">
+     
+
+      <div class="e-logo">
+
+       <!-- <img src="img/eçslogo.webp" alt=""> -->
+
+      </div>
+      
+    </div>
+
+      <div onclick="favori()" class="heart">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+
+    <img src="img/ç7.webp" class="card-img-top" alt="...">
+
+    <div class="card-body">
+
+      <p class="card-text"><b>New Well</b>  Ter Önleyici Beyazlatıcı Roll-on 50 Ml</p>
+
+    
+
+      <div class="price2">
+        137,99 TL
+      </div>
+      <div class="d-flex justify-content-center mt-4">
+        <button type="button" class="btn" style="background-color: #f27b1b; color: white; font-size: 13px; ">
+          Sepete Ekle
+          <i style="color: white; font-size: 10px;" class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+    </a>
+    </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="p-2">
+        <div class="card">
+
+          <a style="color: black;" class="text-decoration-none" href="#">
+  
+        <div class="zindex">
+          <div style="background-color: #3EC461;" class="kargo"><i class="fa-solid fa-truck" style="color: #ffffff;"></i> HIZLI TESLİMAT</div>
+          
+  
+        
+          
+        </div>
+  
+          <div onclick="favori()" class="heart">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+  
+        <img src="img/ç8.webp" class="card-img-top" alt="...">
+  
+        <div class="card-body">
+  
+          <p class="card-text"><b>TRENDYOLMİLLA </b>Siyah Wide Leg Dokuma Pantolon</p>
+  
+        
+  
+          <div class="price">
+            164,99 TL
+          </div>
+          <div class="d-flex justify-content-center mt-4">
+            <button type="button" class="btn" style="background-color: #f27b1b; color: white; font-size: 13px; ">
+              Sepete Ekle
+              <i style="color: white; font-size: 10px;" class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row1">
+    <div class="col-3">
+      <div class="p-2">
+        <div class="card">
+
+          <a style="color: black;" class="text-decoration-none" href="#">
+  
+        <div class="zindex">
+          <div style="background-color: #3EC461;" class="kargo"><i class="fa-solid fa-truck" style="color: #ffffff;"></i> HIZLI TESLİMAT</div>
+          <div class="kargo"><i class="fa-solid fa-cube"></i>KARGO BEDAVA</div>
+  
+          <div class="e-logo">
+  
+           <!-- <img src="img/eçslogo.webp" alt=""> -->
+  
+          </div>
+          
+        </div>
+  
+          <div onclick="favori()" class="heart">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+  
+        <img src="img/ç9.webp" class="card-img-top" alt="...">
+  
+        <div class="card-body">
+  
+          <p class="card-text"><b>LOUİSA</b> Kapşonlu Unisex Siyah Fermuarlı Hırka</p>
+  
+         
+  
+          <div class="price">
+            157.95 TL
+          </div>
+          <div class="d-flex justify-content-center mt-4">
+            <button type="button" class="btn" style="background-color: #f27b1b; color: white; font-size: 13px; ">
+              Sepete Ekle
+              <i style="color: white; font-size: 10px;" class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="p-2">
+        <div class="card">
+
+          <a style="color: black;" class="text-decoration-none" href="#">
+  
+        <div class="zindex">
+        
+          <div class="kargo"><i class="fa-solid fa-cube"></i>KARGO BEDAVA</div>
+  
+        
+          
+        </div>
+  
+          <div onclick="favori()" class="heart">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+  
+        <img src="img/ç10.webp" class="card-img-top" alt="...">
+  
+        <div class="card-body">
+  
+          <p class="card-text"><b>FV</b>  Palazzo Pantolon Oversize Orjinal Kesim</p>
+  
+         
+  
+          <div class="price">
+            239,99 TL
+          </div>
+          <div class="kampanya">
+            <i class="fa-solid fa-tag fa-rotate-90" style="color: #F27A1A;"></i>
+            Çok Al Az Öde
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn" style="background-color: #f27b1b; color: white; font-size: 13px; ">
+              Sepete Ekle
+              <i style="color: white; font-size: 10px;" class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+        </a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="p-2">
+        <div class="card">
+
+          <a style="color: black;" class="text-decoration-none" href="#">
+  
+        <div class="zindex">
+          <div style="background-color: #3EC461;" class="kargo"><i class="fa-solid fa-truck" style="color: #ffffff;"></i> HIZLI TESLİMAT</div>
+          <div class="kargo"><i class="fa-solid fa-cube"></i>KARGO BEDAVA</div>
+  
+          <div class="e-logo">
+  
+           <!-- <img src="img/eçslogo.webp" alt=""> -->
+  
+          </div>
+          
+        </div>
+  
+          <div onclick="favori()" class="heart">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+  
+        <img src="img/ç11.webp" class="card-img-top" alt="...">
+  
+        <div class="card-body">
+  
+          <p class="card-text"><b>Tonny Black</b> Çok Gözlü Geniş Hacimli Ortopedik Sırt Destekli </p>
+  
+         
+  
+          <div class="price">
+            321,99 TL
+          </div>
+          <div class="d-flex">
+            <div class="kupon"><i class="fa-solid fa-gift" style="color: #FF6B9E;"></i>
+              32TL Kupon
+            </div>
+            <div class="kampanya">
+              <i class="fa-solid fa-tag fa-rotate-90" style="color: #F27A1A;"></i>
+              Çok Al Az Öde
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn" style="background-color: #f27b1b; color: white; font-size: 13px; ">
+              Sepete Ekle
+              <i style="color: white; font-size: 10px;" class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-3">
+      <div class="p-2">Custom column padding</div>
+    </div> -->
+  </div>
+  
+
+</div>
+</div>
+</div>
+
+
+<!-- ! CARD END -->
+<hr color="#A5A5A5">
+<!-- ! Popüler marka ve mağazalar start -->
+<div class="container px-4 d-flex " style="padding:20px 0; width: 100%;">
+  <div class="left" style="width:50%;">
+   <p>Popüler Markalar ve Mağazalar</p>
+   <ul class="grid ps-0">
+     <li>Penti</li>
+     <li>Mango</li>
+     <li>Vivense</li>
+     <li>Watsons</li>
+     <li>English Home</li>
+     <li>Bershka</li>
+     <li>Stradivarius</li>
+     <li>Bellona</li>
+     <li>Beymen</li>
+     <li>Istikbal</li>
+     <li>Samsung</li>
+     <li>Addax</li>
+     <li>Puma</li>
+     <li>Mudo</li>
+     <li>Derimod</li>
+     <li>Apple</li>
+     <li>Hummel</li>
+     <li>Huawei</li>
+     <li>Xiaomi</li>
+     <li>Oppo</li>
+     <li>Monster Notebook</li>
+     <li>Birkenstock</li>
+     <li>Arçelik</li>
+     <li>DYSON</li>
+     <li>Adidas</li>
+     <li>Nike</li>
+     <li>Skechers</li>
+     <li>Lacoste</li>
+     <li>Avva</li>
+     <li>Under Armour</li>
+     <li>Madame Coco</li>
+     <li>Pull & Bear</li>
+     <li>Koton</li>
+     <li>Defacto</li>
+     <li>Mavi</li>
+     <li>Pierre Cardin</li>
+     <li>Tchibo</li>
+     <li>Farmasi</li>
+     <li>Herbalife</li>
+     <li>Network</li>
+     <li>Bosch</li>
+     <li>Karaca</li>
+     <li>Kiğılı</li>
+     <li>Migros</li>
+     <li>Crocs</li>
+   </ul>
+  </div>
+  <div class="left" style="width:50%;">
+   <p>Popüler Sayfalar</p>
+   <ul class="grid ps-0">
+     <li>Bluetooth Kulaklık</li>
+     <li>iPhone</li>
+     <li>Samsun Cep Telefonu</li>
+     <li>Azerbaycan'dan Alışveriş</li>
+     <li>Nike Air Max</li>
+     <li>Robot Süpürge</li>
+     <li>Laptop</li>
+     <li>Tam Altın</li>
+     <li>Klima</li>
+     <li>Kulaklık</li>
+     <li>Ütü</li>
+     <li>Koltuk Takımı</li>
+     <li>Apple Watch</li>
+     <li>Çamaşır Makinesi</li>
+     <li>Bulaşık Makinesi</li>
+     <li>Buzdolabı</li>
+     <li>Takım Elbise</li>
+     <li>Abiye Elbise</li>
+     <li>Mobil & Portatif Klima</li>
+     <li>Sırt Çantası</li>
+     <li>Vantilatör</li>
+     <li>iPhone 14 Pro</li>
+     <li>iPhone 14</li>
+     <li>Okul Alışverişi</li>
+     <li>Playstation 5</li>
+     <li>Mega Eylül</li>
+     <li>Televizyon</li>
+     <li>Kahve Makinesi</li>
+     <li>Soğutucu</li>
+     <li>Sneaker </li>
+     <li>Oyuncu Koltuğu</li>
+     <li>Elbise</li>
+     <li>Popüler Aramalar</li>
+     <li>Kırtasiye</li>
+     <li>Defter</li>
+     <li>Dyson Airwrap</li>
+     <li>Apple Airpods</li>
+     <li>Bikini</li>
+     <li>Trendyol Blog</li>
+     <li>Akıllı Saat</li>
+     <li>Macbook</li>
+     <li>Trendyol English</li>
+     <li>Kamp Sandalyesi</li>
+     <li>Fotokopi Kağıdı</li>
+     <li>Trendyol Deutsch</li>
+   </ul>
+  </div>
+ </div>
+
+
+ <!-- ! Popüler marka ve mağazalar end -->
+
+
+
+<!-- ! Footer Start -->
+
+<footer class="bg-black" style=" color: white; width: 100%;">
+
+    <div class="container text-center">
+      <div class="row g-2">
+        <div class="col-3 mt-3">
+          <div class="p-3 text-start">
+           
+          <ul class="footer-ul">
+            <li>
+              <a href="#" class="text-decoration-none" style="color: white;" >
+                <h4>Trendyol</h4>
+              </a>
+            </li>
+            <li>
+              <a href="#">Biz Kimiz</a>
+            </li>
+            <li>
+              <a href="#">Kariyer</a>
+            </li>
+            <li>
+              <a href="#">İletişim</a>
+            </li>
+            <li>
+              <a href="#">Trendyolda Satış Yap</a>
+            </li>
+            <li>
+              <a style="font-size:16px;" href="#">Güvenli Alışveriş</a>
+            </li>
+            <li>
+              <div class="d-flex align-items-center">
+                <div class="troy-img"></div>
+                <div class="mastercard-img"></div>
+                <div class="visa-img"></div>
+                <div class="amex-img"></div>
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+        
+      
+        </div>
+        <div class="col-3 mt-3">
+          <div class="p-3 text-start">
+          
+          <ul class="footer-ul">
+            <li>
+              <a href="#" class="text-decoration-none" style="color: white;">
+                <h4>About Us</h4>
+              </a>
+            </li>
+            <li>
+              <a href="#">Who we are</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+            <li>
+              <a href="#">Sustainability</a>
+            </li>
+            <li>
+              <a style="font-size: 16px;" href="#">Mobil Uygulamalar</a>
+            </li>
+            <li>
+              <a href="#">
+                <img style="width: 140px; height: 40px;" src="/img/appstore.png" alt="">
+              </a>
+            </li>
+            <li style="margin-top: 10px;">
+              <a href="#">
+                <img style="width: 140px; height: 40px;" src="/img/googleplay.webp" alt="">
+              </a>
+            </li>
+            <li style="margin-top: 10px;">
+              <a href="#">
+                <img style="width: 140px; height: 40px;" src="/img/appgallery.webp" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+       
+        
+        </div>
+        <div class="col-3 mt-3">
+          <div class="p-3 text-start">
+           
+          <ul class="footer-ul">
+            <li>
+              <a href="#" class="text-decoration-none" style="color: white;">
+                <h4>Kampanyalar</h4>
+              </a>
+            </li>
+            <li>
+              <a href="#">Aktif Kampanyalar</a>
+            </li>
+            <li>
+              <a href="#">Elite Üyelik</a>
+            </li>
+            <li>
+              <a href="#">Hediye Fikirleri</a>
+            </li>
+            <li>
+              <a href="#">Trendyol Fırsatları</a>
+            </li>
+            <li>
+              <a style="font-size:16px;" href="#">Sosyal Medya</a>
+            </li>
+            <li>
+              <div class="d-flex">
+                <div class="footer-icon">
+                <a href="#">
+                  <i  class="fa-brands fa-facebook-f fs-3 m-1"></i>
+                </a>
+              </div>
+                <div class="footer-icon">
+                  <a href="#">
+                    <i class="fa-brands fa-instagram fs-3 m-1"></i>
+                  </a>
+                </div>
+                <div class="footer-icon">
+                  <a href="#">
+                    <i class="fa-brands fa-twitter fs-3 m-1"></i>
+                  </a>
+                </div>
+                <div class="footer-icon">
+                  <a href="#">
+                    <i class="fa-brands fa-youtube fs-3 m-1"></i>
+                  </a>
+                </div>
+               
+                
+                
+              </div>
+            </li>
+          </ul>
+        </div>
+        </div>
+        <div class="col-3 mt-3">
+          <div class="p-3 text-start">
+           
+          <ul class="footer-ul">
+            <li>
+              <a href="#" class="text-decoration-none" style="color: white;">
+                <h4>Yardım</h4>
+              </a>
+            </li>
+            <li>
+              <a href="#">Sıkça Sorulan Sorular</a>
+            </li>
+            <li>
+              <a href="#">Canlı Yardım</a>
+            </li>
+            <li>
+              <a href="#">Nasıl İade Edebilirim</a>
+            </li>
+            <li>
+              <a href="#">İşlem Rehberi</a>
+            </li>
+            <li>
+              <button type="button" class="btn btn-dark" style="color: white; border: 1px solid white; padding: 1px 6px; font-size: 14px;">
+                Ülke Değiştir
+              </button>
+            </li>
+            <li>
+              <div class="d-flex align-items-center">
+                <img style="width: 90px; height:100px; padding: 5px; margin-right:30px" class="bg-light" src="/img/qr.webp" alt="">
+                <img style="width: 50px; height:50px;" src="/img/tr.png" alt="">
+              </div>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="footer-bottom">
+      <div>
+        <p class="m-0">©2023 DSM Grup Danışmanlık İletişim ve Satış Tic.A.Ş.-Her Hakkı Saklıdır.</p>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a  href="#">Çerez Tercihleri</a>
+          </li>
+          <li>
+            <a   href="#">KVK ve Gizlilik Politikası </a>
+          </li>
+          <li>
+            <a   href="#">DSM Grup</a>
+          </li>
+          <li>
+            <a  href="#">Kullanım Koşulları</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+  </footer>
+  
+  <!-- ! Footer End -->
+
+<!-- ! JQUERY JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- ! JQUERY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- ! CAROUSEL JS -->
+<script src="Js/owl.carousel.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+<script src="Js/script.js"></script>
+</body>
+</html>
